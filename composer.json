@@ -1,0 +1,29 @@
+{
+    "name": "develme/database-patch",
+    "description": "A patch system designed similar to Laravel's database migration tools. Instead of being used to manage schema, the patch system is used to fill that grey area between a database seeder and a database migration. The intentions of the system is to patch/adjust existing data, but this could be a replacement for seeders since whether a patch has been ran or not is tracked.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Verron Knowles",
+            "email": "Verron.Knowles@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevelMe\\DatabasePatch\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevelMe\\DatabasePatch\\Providers\\PatchServiceProvider"
+            ]
+        }
+    }
+}

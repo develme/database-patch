@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Support\Facades\DB;
+use DevelMe\DatabasePatch\Patches\Patch;
+
+class DummyClass extends Patch
+{
+    /**
+     * Run the patches.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        //
+    }
+
+    /**
+     * Reverse the patches.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
+}
